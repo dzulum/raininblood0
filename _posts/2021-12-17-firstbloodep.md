@@ -5,4 +5,4 @@ tags: audio
 title: First Blood EP
 ---
 # First Blood EP
-![First Blood EP](/images/firstblood.jpg)
+![First Blood EP](./images/firstblood.jpg)
