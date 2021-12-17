@@ -1,0 +1,23 @@
+---
+layout: default
+comments: true
+---
+<div class="darkgreyt center separador esquinas">
+<div class="content leer">
+  <h1>{{ post.title }}</h1>
+  {{ content }}
+  </div>
+
+  <div class="blackt">
+    Escrito en {{ page.date | date: "%B %e, %Y" }}
+{% include posts-related.html %}
+  </div>
+<span class="blackt">
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}" class="tg">{{ tag_name }}</a>
+  {% endfor %}
+]</span>
+  {% include disqus.html %}
+</div>
+</div>
